@@ -23,7 +23,7 @@ public class UserResourceTest extends BaseTestClient {
 				.accept(MediaType.APPLICATION_JSON)
 				.post(ClientResponse.class, "{\"fullName\":\"User 1\"}");
 		String location = clientResponse.getHeaders().getFirst("Location");		
-		location = location.substring(getPath().length() + getResourcePath().length());
+		location = location.substring(getPath().length() + getResourcePath().length() + 1);// +1 for slash user/1
 		Long id = new Long(location);
 		return id;
 	}

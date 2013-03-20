@@ -48,7 +48,7 @@ public abstract class BaseTestClient extends JerseyTest {
 	protected URI getBaseURI() {
 		
 		return UriBuilder.fromUri("http://localhost/")
-                .port(getPort(8080)).build();
+                .port(getPort(18080)).build();
 	}
 	
 	@Override
