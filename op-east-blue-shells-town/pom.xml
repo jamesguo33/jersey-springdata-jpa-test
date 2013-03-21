@@ -10,6 +10,16 @@
 	<artifactId>op-east-blue-shells-town</artifactId>
 	<packaging>war</packaging>
 	<name>SpringData-JPA-Jersey</name>
+    <build>
+        <plugins>
+            <!-- Maven Tomcat Plugin -->
+	      <plugin>
+	        <groupId>org.apache.tomcat.maven</groupId>
+	        <artifactId>tomcat7-maven-plugin</artifactId>
+	        <version>2.1</version>
+	      </plugin>
+        </plugins>
+    </build>
 	<dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -45,4 +55,5 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 </project>
